@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>암호화 복호화 하기 3308노예린</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>암호화 복호화</h1><br>
+
+        <span>암호키 </span> <br>
+        <input type="text" id="key" placeholder="암호키를 입력하세요"><br>
+
+        <span>평문 </span> <br>
+        <input type="text" id="str" placeholder="평문을 입력하세요"><br><br>
+
+        <button onclick="init()">시작</button><br>
+    </div>
+
+    <div class="footer">
+        <h1>암호화 & 복호화</h1><br>
+
+        <span>사용한 암호키</span> <br>
+        <input type="text" id="key1" readonly><br>
+
+        <span>사용한 평문</span> <br>
+        <input type="text" id="str1" readonly><br>
+
+        <span>배열</span> <br>
+        <div id="a"></div> <br>
+        
+        <span>암호문</span> <br>
+        <input type="text" id="encryption" readonly> <br>
+        <button onclick="decry()">복호화</button>
+
+        <span>복호문</span> <br>
+        <input type="text" id="decryption" placeholder="복호문을 볼려면 버튼을 눌러주세요"readonly> <br>
+
+        <button onclick="home()">홈으로</button>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
